@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Mobile Shop</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+}
+
+/* HEADER */
+.header {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(135deg, #1e88e5, #42a5f5);
+    padding: 15px 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.search {
+    width: 60%;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+}
+
+/* BANNER */
+.banner {
+    margin: 20px;
+    padding: 25px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ff7043, #ff4081);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.banner button {
+    background: white;
+    color: #ff4081;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.banner button:hover {
+    transform: scale(1.05);
+}
+
+/* CONTENT */
+.container {
+    padding: 0 20px 30px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* PRODUCTS */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background: rgba(255,255,255,0.9);
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.product h4 {
+    margin: 10px 0 5px;
+}
+
+.price {
+    color: #e53935;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(255,255,255,0.7);
+    font-size: 14px;
+    color: #555;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h2>📱 Mobile Shop</h2>
+    <input class="search" placeholder="Tìm kiếm điện thoại...">
+</div>
+
+<!-- BANNER -->
+<div class="banner">
+    <div>
+        <h2>🔥 SALE CỰC SỐC</h2>
+        <p>Giảm đến 50% – Số lượng có hạn</p>
+    </div>
+    <button>Mua ngay</button>
+</div>
+
+<!-- PRODUCTS -->
+<div class="container">
+    <div class="title">✨ Sản phẩm nổi bật</div>
+
+    <div class="products">
+        <div class="product">
+            <img src="https://via.placeholder.com/300">
+            <h4>iPhone 13 Pro</h4>
+            <p class="price">14.000.000đ</p>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/300">
+            <h4>Samsung Galaxy S25 ultra</h4>
+            <p class="price">31.099.000đ</p>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/300">
+            <h4>Xiaomi 13</h4>
+            <p class="price">6.990.000đ</p>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/300">
+            <h4>OPPO Reno 8</h4>
+            <p class="price">12.990.000đ</p>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2026 Mobile Shop • Designed by pro coder 😎
+</div>
+
+</body>
+</html>
+
