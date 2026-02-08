@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<link rel="stylesheet" href="./css/detail.css">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý sản phẩm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- FORM -->
+        <div class="form-box">
+            <h2>Sửa sản phẩm</h2>
+
+            <input type="hidden" id="editIndex">
+
+            <label>Tên sản phẩm</label>
+            <input type="text" id="name">
+
+            <label>Giá</label>
+            <input type="number" id="price">
+
+            <label>Ảnh sản phẩm</label>
+            <input type="file" id="image" accept="image/*" onchange="previewImage(event)">
+            <img id="preview" style="display:none;">
+
+            <button onclick="saveProduct()">Lưu</button>
+        </div>
+
+    </div>
+
+    <script src="./js/detail.js"></script>
+</body>
+
+</html>

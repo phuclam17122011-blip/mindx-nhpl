@@ -122,6 +122,60 @@ body {
     font-size: 14px;
     color: #555;
 }
+.btn-add {
+    margin: 10px 0 20px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    transition: all 0.3s ease;
+}
+
+.btn-add:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+.btn-add:active {
+    transform: scale(0.95);
+}
+.product {
+    position: relative;
+}
+
+.product-click {
+    cursor: pointer;
+}
+
+.btn-delete {
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #ff5252, #e53935);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-delete:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.btn-delete:active {
+    transform: scale(0.95);
+}
+
+
 </style>
 </head>
 
@@ -145,31 +199,9 @@ body {
 <!-- PRODUCTS -->
 <div class="container">
     <div class="title">✨ Sản phẩm nổi bật</div>
-
-    <div class="products">
-        <div class="product">
-            <img src="https://via.placeholder.com/300">
-            <h4>iPhone 13 Pro</h4>
-            <p class="price">14.000.000đ</p>
-        </div>
-
-        <div class="product">
-            <img src="https://via.placeholder.com/300">
-            <h4>Samsung Galaxy S25 ultra</h4>
-            <p class="price">31.099.000đ</p>
-        </div>
-
-        <div class="product">
-            <img src="https://via.placeholder.com/300">
-            <h4>Xiaomi 13</h4>
-            <p class="price">6.990.000đ</p>
-        </div>
-
-        <div class="product">
-            <img src="https://via.placeholder.com/300">
-            <h4>OPPO Reno 8</h4>
-            <p class="price">12.990.000đ</p>
-        </div>
+    <button class="btn-add" onclick="openAddPage()">➕ Thêm sản phẩm</button>
+    <div class="products" id="products">
+        
     </div>
 </div>
 
@@ -180,4 +212,7 @@ body {
 
 </body>
 </html>
+<script src="./js/main.js">
+
+</script>
 
